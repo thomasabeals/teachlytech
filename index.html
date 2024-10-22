@@ -13,11 +13,12 @@
 		<div id="wrapper" class="fade-in">
 
 			<!-- Intro -->
-			<div id="intro">
+			<div id="intro" style=" font-family: 'Roboto', sans-serif; 
+            color: #32fd96; text-transform: none;">
 				<h1>Welcome to<br />
 				Teachly Tech</h1>
-				<p>Your solution for data analytics and technology tutoring services.<br />
-				We offer customized insights and personalized tutoring to help you thrive in a digital world.</p>
+				<p>Providing for data analytics solutions and technology tutoring services.<br />
+				We offer customized data analytics solutions and personalized tutoring services to help you thrive in a digital world.</p>
 				<ul class="actions">
 					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Learn More</a></li>
 				</ul>
@@ -50,14 +51,32 @@
 				<article class="post featured">
 					<header class="major">
 						<span class="date">October 21, 2024</span>
-						<h2><a href="#">Introducing<br />
-						Teachly Tech</a></h2>
+						<h2><a href="#">"Meet Thomas"
+							<br /> the visionary founder of Teachly Tech.</a></h2>
 						<p>We offer cutting-edge data analytics services and personalized technology tutoring. Explore our portfolio and tutoring services to see how we can help you achieve your goals.</p>
 					</header>
-					<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-					<ul class="actions special">
-						<li><a href="portfolio.html" class="button large">View Portfolio</a></li>
-					</ul>
+					<!-- Image and ABOUT button -->
+					<div id="image-section" class="main-content">
+						<a href="#" class="image main">
+						<img id="main-image" src="images/logott.webp" alt="Teachly Tech Logo" />
+						</a>
+						<ul class="actions special">
+						<li>
+							<a href="#" class="button large" id="about-button">ABOUT</a>
+						</li>
+						</ul>
+					</div>
+					<!-- Bio Section (hidden by default) -->
+					<div id="bio-section" style="display: none;">
+						<img src="images/your-photo-placeholder.webp" alt="Your Photo" style="width: 150px; border-radius: 50%; margin: 10px auto; display: block;">
+						<p style="text-align: center;">
+						<!-- Placeholder bio text -->
+						Hi, I'm [Your Name], the founder of Teachly Tech. With a passion for tech and data, I created Teachly Tech to offer tailored analytics and tutoring solutions. I specialize in simplifying complex technology concepts and empowering clients to thrive in a digital-first world.
+						</p>
+						<p style="text-align: center;">
+						At Teachly Tech, our goal is to equip you with the tools and knowledge to achieve your goals, whether through data analytics insights or hands-on tech learning.
+						</p>
+					</div>
 				</article>
 
 				<!-- Posts -->
@@ -174,6 +193,16 @@
 		</div>
 
 		<!-- Scripts -->
+		<script>
+			// JavaScript to handle the About button click
+			document.getElementById("about-button").addEventListener("click", function (e) {
+			  e.preventDefault(); // Prevent default link behavior
+		  
+			  // Hide the image section and show the bio section
+			  document.getElementById("image-section").style.display = "none";
+			  document.getElementById("bio-section").style.display = "block";
+			});
+		</script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>

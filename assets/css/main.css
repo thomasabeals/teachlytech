@@ -3292,7 +3292,6 @@ input, select, textarea {
 	z-index: 1;
 	overflow: hidden;
   }
-  
 	#wrapper > .bg {
 	  position: absolute;
 	  top: 0;
@@ -3303,7 +3302,7 @@ input, select, textarea {
 	  background-image: 
 		url("../../images/overlay.png"), /* Overlay image if needed */
 		linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Light gradient for depth */
-		url("../../images/logott.webp"); /* Your logo image */
+		url("");  /* Your logo image */
 	  background-size: auto, auto, 50% auto; /* Size logo appropriately */
 	  background-position: center, center, center; /* Center the logo */
 	  background-repeat: repeat, no-repeat, no-repeat;

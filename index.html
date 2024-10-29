@@ -47,9 +47,9 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" class = 'about' id="tab1" href="#about" onclick="toggleTab(this, 'tab1', 'tab2', 'tab3')">About Teachly Tech</a></li>
-					<li><a id="tab2" class='training' href="#training-services"  style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" onclick="toggleTab(this, 'tab2', 'tab1', 'tab3')">Training Services</a></li>
-					<li><a id="tab3" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" class = 'projects' href="#projects" onclick="toggleTab(this, 'tab3', 'tab1', 'tab2');">Portfolio</a></li>
+					<li><a id="tab1" href="#about" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab1', 'tab2', 'tab3')">About Teachly Tech</a></li>
+					<li><a id="tab2" href="#training"  style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab2', 'tab1', 'tab3')">Training Services</a></li>
+					<li><a id="tab3" href="#projects" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab3', 'tab1', 'tab2');">Portfolio</a></li>
 				</ul>  
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -117,7 +117,7 @@
 				</div>
 
 				<!-- Tutoring Services Section -->
-				<div id="training-services" style="display: none;">
+				<div id="training" style="display: none;">
 					<div class="container">
 						<header>
 							<h1>Tutoring Services</h1>
@@ -228,6 +228,52 @@
 				document.getElementById('nav-' + name).classList.add('active');
 			}
 		</script> -->
+		<script>
+		function toggleTab(clickedLink, activeTabId, ...inactiveTabIds) {
+			// Reset all tabs to default state
+			const allTabs = document.querySelectorAll('.links a');
+			allTabs.forEach(tab => {
+				tab.style.backgroundColor = 'rgba(255, 255, 255, 0.075)';
+				tab.style.color = '#ffffff';
+			});
+		
+			// Set active tab styles
+			clickedLink.style.backgroundColor = '#ffffff';
+			clickedLink.style.color = '#000000';
+		
+			// Hide all content divs first
+			const contentDivs = ['about', 'projects', 'training-services'];
+			contentDivs.forEach(divId => {
+				const div = document.getElementById(divId);
+				if (div) {
+					div.style.display = 'none';
+				}
+			});
+		
+			// Show the selected content
+			// Remove the '#' from the href to get the div id
+			const targetDivId = clickedLink.getAttribute('href').substring(1);
+			const targetDiv = document.getElementById(targetDivId);
+			if (targetDiv) {
+				targetDiv.style.display = 'block';
+			}
+		
+			// Smooth scroll to the div
+			targetDiv.scrollIntoView({ behavior: 'smooth' });
+		
+			// Prevent default anchor behavior
+			return false;
+		}
+		
+		// Add this to initialize the page with the first tab active
+		document.addEventListener('DOMContentLoaded', function() {
+			// Get the first tab and simulate a click
+			const firstTab = document.getElementById('tab1');
+			if (firstTab) {
+				firstTab.click();
+			}
+		});
+	</script>
 		<script>
 			function toggleResume() {
 				var pdfViewer = document.getElementById("pdf-viewer");

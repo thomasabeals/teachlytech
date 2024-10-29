@@ -47,24 +47,29 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a id="tab1" 
-						href="#about" 
-						style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" 
-						onmouseover="this.style.color='#18bfef'" 
-						onmouseout="this.style.color='#ffffff'"
-						onclick="return toggleTab(this, 'about', 'training', 'projects')">About Teachly Tech</a></li>
-					<li><a id="tab2" 
-						href="#training"  
-						style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" 
-						onmouseover="this.style.color='#18bfef'" 
-						onmouseout="this.style.color='#ffffff'"
-						onclick="return toggleTab(this, 'training', 'about', 'projects')">Training Services</a></li>
-					<li><a id="tab3" 
-						href="#projects" 
-						style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" 
-						onmouseover="this.style.color='#18bfef'" 
-						onmouseout="this.style.color='#ffffff'"
-						onclick="return toggleTab(this, 'projects', 'about', 'training')">Portfolio</a></li>
+					<li onmouseover="this.style.color='#18bfef'" onmouseout="this.style.color='#ffffff'">
+					<a 
+						id="tab1" 
+						href="#about"  
+						onclick="return toggleTab(this, 'about', 'training', 'projects')">
+						About Teachly Tech
+				    </a>
+				    </li>
+					<li	onmouseover="this.style.color='#18bfef'" onmouseout="this.style.color='#ffffff'">
+					<a 
+						id="tab2" 
+						href="#training"   
+					    onclick="return toggleTab(this, 'training', 'about', 'projects')">
+						Training Services
+					</a>
+				    </li>
+					<li	onmouseover="this.style.color='#18bfef'" onmouseout="this.style.color='#ffffff'">
+					<a  id="tab3" 
+						href="#projects"  
+					    onclick="return toggleTab(this, 'projects', 'about', 'training')">
+						Portfolio
+					</a>
+				    </li>
 				</ul> 
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -257,7 +262,7 @@
 			clickedLink.style.color = '#000000';
 		
 			// Hide all content divs first
-			const contentDivs = ['about', 'projects', 'training-services'];
+			const contentDivs = ['about', 'projects', 'training'];
 			contentDivs.forEach(divId => {
 				const div = document.getElementById(divId);
 				if (div) {

@@ -224,11 +224,11 @@
 		
 				// Display the selected section
 				document.getElementById(name).style.display = 'block';
-				document.getElementsByClassName('active')[0].classList.remove('active');
+				document.getElementsByClassName(name)[0].classList.remove('active');
 				document.getElementById('nav-' + name).classList.add('active');
 			}
 		</script>
-		
+
 
 		<script>
 			function toggleResume() {

@@ -47,10 +47,25 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a id="tab1" href="#about" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab1', 'tab2', 'tab3')">About Teachly Tech</a></li>
-					<li><a id="tab2" href="#training"  style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab2', 'tab1', 'tab3')">Training Services</a></li>
-					<li><a id="tab3" href="#projects" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" onclick="return toggleTab(this, 'tab3', 'tab1', 'tab2');">Portfolio</a></li>
-				</ul>  
+					<li><a id="tab1" 
+						href="#about" 
+						style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" 
+						onmouseover="this.style.color='#18bfef'" 
+						onmouseout="this.style.color='#ffffff'"
+						onclick="return toggleTab(this, 'about', 'training', 'projects')">About Teachly Tech</a></li>
+					<li><a id="tab2" 
+						href="#training"  
+						style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" 
+						onmouseover="this.style.color='#18bfef'" 
+						onmouseout="this.style.color='#ffffff'"
+						onclick="return toggleTab(this, 'training', 'about', 'projects')">Training Services</a></li>
+					<li><a id="tab3" 
+						href="#projects" 
+						style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" 
+						onmouseover="this.style.color='#18bfef'" 
+						onmouseout="this.style.color='#ffffff'"
+						onclick="return toggleTab(this, 'projects', 'about', 'training')">Portfolio</a></li>
+				</ul> 
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>

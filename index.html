@@ -47,9 +47,9 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li class="active"><a class = 'about' href="#" onclick="showSection('about')">About Teachly Tech</a></li>
-					<li><a class = 'training' href="#" onclick="showSection('training-services')">Training Services</a></li>
-					<li><a class = 'projects' href="#" onclick="showSection('projects')">Portfolio</a></li>
+					<li class="active"><a style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" class = 'about' id="tab1" href="#about" onclick="toggleTab(this, 'tab1', 'tab2', 'tab3'); showSection('about')">About Teachly Tech</a></li>
+					<li><a id="tab2" class='training' href="#training-services"  style="background-color: rgb(255, 255, 255, 0.075); color: #ffffff;" onclick="toggleTab(this, 'tab2', 'tab1', 'tab3'); showSection('training-services')">Training Services</a></li>
+					<li><a id="tab3" style="background-color: rgba(255, 255, 255, 0.075); color: #ffffff;" class = 'projects' href="#projects" onclick="toggleTab(this, 'tab3', 'tab1', 'tab2'); showSection('projects')">Portfolio</a></li>
 				</ul>  
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -71,13 +71,13 @@
 						</header>
 						<!-- Bio Section (hidden by default) -->
 						<div id="bio-section" >
-							<img src="images/your-photo-placeholder.webp" alt="Your Photo" style="width: 150px; border-radius: 50%; margin: 10px auto; display: block;">
+							<img src="images/20240823_165423.jpg" alt="Your Photo" style="width: 150px; border-radius: 50%; margin: 10px auto; display: block;">
 							<p style="text-align: center;">
 							<!-- Placeholder bio text -->
 							"Hello, I'm Thomas, the founder of Teachly Tech. Driven by a passion for technology and data, I created Teachly Tech to provide personalized analytics solutions and expert guidance. My goal is to make learning complex technologies and languages stress-free, while also saving you valuable time. I specialize in simplifying intricate concepts, empowering you to navigate the digital world with confidence. Whether through my advanced data analytics services or comprehensive technology coaching, I aim to help you achieve success without the usual complexities."
 							</p>
 							<div class="pdf-toggle-container">
-								<button id="toggle-button" onclick="toggleResume()">View Resume</button>
+								<button class="links" id="toggle-button" onclick="toggleResume()">View Resume</button>
 								<div class="pdf-viewer" id="pdf-viewer" style="display: none;">
 									<iframe src="images/Thomas_Beals_CV.pdf" class="pdf-frame"></iframe>
 								</div>
@@ -144,22 +144,22 @@
 				<h3>Social</h3>
 				<ul class="icons alt" style="display: inline-block;">
 					<li style="display: inline-block; margin: 0 10px;">
-					<a href="#" class="icon brands alt fa-twitter" style="font-size: 2em;">
+					<a href="#" class="icon brands alt fa-twitter" style="font-size: 5em; color: #32fd96;">
 						<span class="label">Twitter</span>
 					</a>
 					</li>
 					<li style="display: inline-block; margin: 0 10px;">
-					<a href="#" class="icon brands alt fa-facebook-f" style="font-size: 2em;">
+					<a href="#" class="icon brands alt fa-facebook-f" style="font-size: 5em; color: #32fd96">
 						<span class="label">Facebook</span>
 					</a>
 					</li>
 					<li style="display: inline-block; margin: 0 10px;">
-					<a href="#" class="icon brands alt fa-instagram" style="font-size: 2em;">
+					<a href="#" class="icon brands alt fa-instagram" style="font-size: 5em; color: #32fd96">
 						<span class="label">Instagram</span>
 					</a>
 					</li>
 					<li style="display: inline-block; margin: 0 10px;">
-					<a href="#" class="icon brands alt fa-github" style="font-size: 2em;">
+					<a href="#" class="icon brands alt fa-github" style="font-size: 5em; color: #32fd96">
 						<span class="label">GitHub</span>
 					</a>
 					</li>

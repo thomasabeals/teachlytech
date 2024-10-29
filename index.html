@@ -47,9 +47,9 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li class="active"><a href="#" onclick="showSection('about')">About Teachly Tech</a></li>
-					<li><a href="#" onclick="showSection('training-services')">Training Services</a></li>
-					<li><a href="#" onclick="showSection('projects')">Portfolio</a></li>
+					<li class="active"><a class = 'about' href="#" onclick="showSection('about')">About Teachly Tech</a></li>
+					<li><a class = 'training' href="#" onclick="showSection('training-services')">Training Services</a></li>
+					<li><a class = 'projects' href="#" onclick="showSection('projects')">Portfolio</a></li>
 				</ul>  
 				<ul class="icons">
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -215,7 +215,7 @@
 
 
 		<script>
-			function showSection(sectionId) {
+			function showSection(name) {
 				// Hide all sections inside #main
 				const sections = document.querySelectorAll('#main > div');
 				sections.forEach(section => {
@@ -223,7 +223,9 @@
 				});
 		
 				// Display the selected section
-				document.getElementById(sectionId).style.display = 'block';
+				document.getElementById(name).style.display = 'block';
+				document.getElementsByClassName('active')[0].classList.remove('active');
+				document.getElementById('nav-' + name).classList.add('active');
 			}
 		</script>
 		

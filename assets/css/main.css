@@ -4817,5 +4817,38 @@ input, select, textarea {
 		border-radius: 8px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	  }
-	  
+	  .pdf-viewer {
+		  width: 100%;
+		  height: 600px; /* Adjust this height as needed */
+		  margin-top: 20px;
+	  }
+  
+	  .pdf-frame {
+		  width: 100%;
+		  height: 100%;
+		  border: none;
+	  }
+  
+	  #toggle-button {
+		  padding: 10px 20px;
+		  background-color: #32fd96; /* Button color */
+		  border: none;
+		  color: white;
+		  font-size: 16px;
+		  cursor: pointer;
+		  margin-top: 20px;
+	  }
+  
+	  #toggle-button:hover {
+		  background-color: #28c882; /* Hover effect */
+	  }
+	  #main > div {
+		transition: all 0.3s ease-in-out;
+	}
+	
+	.pdf-viewer {
+		transition: all 0.3s ease-in-out;
+	}
+
+		
 	  

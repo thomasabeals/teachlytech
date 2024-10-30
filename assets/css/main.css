@@ -141,6 +141,13 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
+			.fade-in > #nav .links #tab1,
+			.fade-in > #nav .links #tab2,
+			.fade-in > #nav .links #tab3 {
+			/* Add your styles here */
+			color: #000; /* Example style */
+			}
+
 		}
 
 	body {
@@ -1063,6 +1070,12 @@ input, select, textarea {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+			.fade-in > #nav .links #tab1,
+			.fade-in > #nav .links #tab2,
+			.fade-in > #nav .links #tab3 {
+			/* Add your styles here */
+			color: #000; /* Example style */
+}
 
 				.row > * {
 					box-sizing: border-box;

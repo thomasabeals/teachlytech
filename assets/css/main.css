@@ -1070,11 +1070,12 @@ input, select, textarea {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+			.fade-in > #nav .links li,
 			.fade-in > #nav .links #tab1,
 			.fade-in > #nav .links #tab2,
 			.fade-in > #nav .links #tab3 {
 			/* Add your styles here */
-			color: #000; /* Example style */
+			color: rgb(26, 27, 65); /* Example style */
 }
 
 				.row > * {

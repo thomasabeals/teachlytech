@@ -3316,6 +3316,13 @@ input, select, textarea {
 	  width: 100vw;
 	  height: 100vh;
 	}
+
+#wrapper.fade-in > .soc {
+	display:flex;
+	justify-content: center; /* Centers container horizontally */
+	align-items: center; /* Centers container vertically */
+
+}
   
   #wrapper.fade-in:before {
 	pointer-events: none;

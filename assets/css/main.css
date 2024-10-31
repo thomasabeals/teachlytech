@@ -4614,7 +4614,7 @@ input, select, textarea {
 		}
 
 		#navPanelToggle.alt {
-			background-color: rgb(169, 170, 236);
+			background-color: rgb(26, 27, 65);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
 			color: #212931;
 		}
@@ -4870,5 +4870,11 @@ input, select, textarea {
 		transition: all 0.3s ease-in-out;
 	}
 
+
+	#nav .links li a {
+		color:  #32fd96 ; /* Replace #ff0000 with your desired color */
+	}
+	  
+	  
 		
 	  

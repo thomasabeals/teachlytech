@@ -48,7 +48,7 @@
 			<nav id="nav">
 				<ul class="links">
 					<li	onmouseover= "this.style.color='#18bfef'" onmouseout="this.style.color='#32fd96'">
-						<a 
+						<a
 						id="tab1" 
 						href="#about" 
 						onclick="return toggleTab(this, 'about', 'training', 'projects')">
@@ -91,7 +91,7 @@
 						</header>
 						<!-- Bio Section (hidden by default) -->
 						<div id="bio-section" >
-							<img src="images/new_profile_pic.png" alt="Your Photo" style="width: 400px; border-radius: 30%; margin: 10px auto; display: block;">
+							<img src="images/new_profile_pic.png" alt="Your Photo" style="width: 400px; border-radius: 30%; margin: 0px auto; display: block;">
 							<p style="text-align: center;">
 							<!-- Placeholder bio text -->
 							"Hello, I'm Thomas, the founder of Teachly Tech. Driven by a passion for technology and data, I created Teachly Tech to provide personalized analytics solutions and expert guidance. My goal is to make learning complex technologies and languages stress-free, while also saving you valuable time. I specialize in simplifying intricate concepts, empowering you to navigate the digital world with confidence. Whether through my advanced data analytics services or comprehensive technology coaching, I aim to help you achieve success without the usual complexities."
@@ -143,6 +143,10 @@
 						<b>Reflection / Lessons Learned:</b> Enhanced skills in web scraping and geospatial data visualization. Future improvements include refining location accuracy and integrating additional job details, such as industry and required skills.
 					</li>
 					</ul>
+					<body>
+						<title>Job Location Heatmap</title>
+						<iframe src="job_heatmap.html" width="80%" height="400px"></iframe>
+					</body>
 					</section>
 					<section class = 'post'>						
 						<h4>Cryptocurrency Visualization Project for Potential Investors</h4>
@@ -181,10 +185,11 @@
 					</li>	
 					</ul>
 						<iframe src="crypto_price_changes.html" width="100%" height="500px" style="border:none;"></iframe>
-						<div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-							<p style="color: red; margin: 0;">hover for 7 day changes</p>
-							<p style="color: blue; margin: 0;">hover for 24 hour changes</p>
-						</div>					
+						<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;">
+							<p>
+								toggle between <span style="color: red;">7 day changes</span> and <span style="color: blue;">24 hour changes</span> in the top right
+							</p>
+						</div>				
 					</section>
 				</div>
 				<!-- Tutoring Services Section -->

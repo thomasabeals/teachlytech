@@ -1,6 +1,0 @@
-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
-git remote set-url origin https://thomasabeals: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
-@github.com/thomasabeals/teachlytech.git
-
-git remote set-url origin https://username:ghp_ABC123XYZ456@example.git
-
